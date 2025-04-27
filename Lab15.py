@@ -8,7 +8,7 @@ y_values = [sin(x) for x in x_values]
 
 plt.style.use('seaborn-v0_8')
 fig, ax = plt.subplots()
-ax.set_title("Sine Wave", fontsize=24)
+ax.set_title("Sine Wave", fontsize=18)
 ax.plot(x_values, y_values)
 
 
@@ -16,4 +16,5 @@ ax.plot(x_values, y_values)
 
 # Set the range for each axis.
 ax.axis([-5, 5, -2, 2])
+ax.tick_params(labelsize=9)
 plt.show()
